@@ -1,6 +1,6 @@
 /**
  * Smooth Scroll Functionality section */
-const initSmoothScroll = () => {
+const smoothScroll = () => {
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
@@ -21,7 +21,7 @@ const initSmoothScroll = () => {
 
 /**
  * Scroll Progress Indicator section */
-const handleScrollProgress = () => {
+const updateScrollBar = () => {
     const progressBar = document.getElementById('scrollIndicator');
     const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     
@@ -64,7 +64,7 @@ const handleForm = () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Use FormData for a more professional approach to inputs
+        // get form values
         const formData = new FormData(form);
         const name = formData.get('name');
         
@@ -75,8 +75,8 @@ const handleForm = () => {
 
 // Initialize all functions
 document.addEventListener('DOMContentLoaded', () => {
-    initSmoothScroll();
-    handleScrollProgress();
+    smoothScroll();
+    updateScrollBar();
     animateSkills();
     handleForm();
 });

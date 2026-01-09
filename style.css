@@ -5,7 +5,7 @@
     --dark: #2d3436;
     --light: #f9f9fb;
     --white: #ffffff;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition: all 0.3s ease;
 }
 
 * {
