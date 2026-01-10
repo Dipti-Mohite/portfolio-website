@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Junior Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Scroll Indicator -->
     <div class="scroll-indicator" id="scrollIndicator"></div>
 
-    <nav class="navbar">
-        <ul class="nav-menu">
+    <!-- Navigation -->
+    <nav>
+        <ul>
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -20,103 +22,123 @@
         </ul>
     </nav>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Junior Web Developer</h1>
-            <p>I build responsive, user-friendly web applications with a focus on clean code.</p>
-            <a href="#contact" class="cta-btn">Work With Me</a>
-        </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hi, Dipti Mohite</h1>
+        <p>I like building simple websites and learning new things on the web.</p>
+        <a href="#contact" class="btn">Contact Me</a>
     </section>
 
-    <section id="about" class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-visual">
-                <div class="profile-avatar">👨‍💻</div>
-            </div>
-            <div class="about-description">
-                <p>I am a passionate Junior Developer specializing in front-end technologies. I thrive on turning complex problems into simple, beautiful interface designs.</p>
-                <p>With a strong foundation in modern web standards, I focus on performance and accessibility in every project I touch.</p>
-                <p>When I’m not at my desk, you’ll find me exploring new UI trends or contributing to open-source learning communities.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am web developer.</p>
+                <p>I enjoy building small projects to improve my coding skills.</p>
+                <p>This portfolio is created as part of my learning journey.</p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-wrapper">
-            <div class="skill-card" data-skill="95">
-                <h3>HTML5 & Semantics</h3>
-                <p>Expertise in accessible and SEO-friendly markup.</p>
-                <div class="skill-track">
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+
+            <div class="skill-card" data-skill="90">
+                <h3>HTML5</h3>
+                <p>Creating structured and semantic web pages.</p>
+                <div class="skill-bar">
                     <div class="skill-progress"></div>
                 </div>
             </div>
-            <div class="skill-card" data-skill="85">
-                <h3>Modern CSS</h3>
-                <p>Proficient in Flexbox, Grid, and responsive layouts.</p>
-                <div class="skill-track">
+
+            <div class="skill-card" data-skill="80">
+                <h3>CSS3</h3>
+                <p>Styling, layouts, responsiveness, and animations.</p>
+                <div class="skill-bar">
                     <div class="skill-progress"></div>
                 </div>
             </div>
-            <div class="skill-card" data-skill="75">
-                <h3>JavaScript ES6+</h3>
-                <p>Experience in DOM manipulation and asynchronous logic.</p>
-                <div class="skill-track">
+
+            <div class="skill-card" data-skill="70">
+                <h3>JavaScript</h3>
+                <p>Adding interactivity and logic to websites using JS.</p>
+                <div class="skill-bar">
                     <div class="skill-progress"></div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-container">
-            <div class="project-item">
-                <div class="project-preview">🌐</div>
-                <div class="project-body">
-                    <h3>Enterprise Dashboard</h3>
-                    <p>A full-scale admin panel with real-time data visualization.</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <p class="project-note">
+            These projects represent my learning journey in web development.
+        </p>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-info">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        My first complete web development project built using
+                        HTML, CSS, and JavaScript. It includes smooth scrolling,
+                        animated skill bars, responsive design, and a contact form.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/portfolio-website" target="_blank" class="project-btn">
+                            GitHub Code
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="project-item">
-                <div class="project-preview">📱</div>
-                <div class="project-body">
-                    <h3>SaaS Landing Page</h3>
-                    <p>High-converting landing page optimized for mobile devices.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-preview">🎨</div>
-                <div class="project-body">
-                    <h3>Brand Identity Tool</h3>
-                    <p>Interactive platform for generating accessible color palettes.</p>
-                </div>
-            </div>
+
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2 class="section-title">Get In Touch</h2>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+
         <form class="contact-form" id="contactForm">
-            <div class="input-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="John Doe" required>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
             </div>
-            <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="john@example.com" required>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
             </div>
-            <div class="input-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" placeholder="How can I help you?" required></textarea>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
             </div>
-            <button type="submit" class="form-submit">Send</button>
+
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
 
-    <footer class="main-footer">
-        <p>Built with passion &copy; 2026 Developer Portfolio</p>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. Dipti Mohite.</p>
+
+        <div class="social-links">
+            <a href="mailto:dmohite2004@gmail.com" target="_blank" title="Gmail">📧</a>
+            <a href="https://wa.me/9594412087" target="_blank" title="WhatsApp">💬</a>
+            <a href="https://www.linkedin.com/in/dipti-mohite-602361364" target="_blank" title="LinkedIn">🔗</a>
+            <a href="https://github.com/Dipti-Mohite" target="_blank" title="GitHub">🐙</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
